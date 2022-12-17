@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;500&family=PT+Serif:wght@400;700&display=swap');
+body{
+    font-family: montserrat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 200px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 4rem;
+    color: green;
+
+}
+.wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(233, 237, 237, 0.789), rgba(44, 47, 45, 0.947)),
+    url(./images/pexels-tope-a-asokere-578932.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding-top: 4rem;
+    padding-bottom: 7.5rem;
+}
+
+small{
+    color: green;
+    font-size: 2rem;
+}
+h3{
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    animation: myAni 6s ease-in-out 0s infinite normal forwards;
+}
+@keyframes myAni {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+span{
+    color: white;
+    font-weight: bold;
+}
+.hours h1{
+    font-size: 5rem;
+    letter-spacing: 0rem;
+    text-decoration-line: overline;
+}
+.container .hours{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1rem;
+}
+h2{
+    text-align: center;
+    margin-top: 1rem;
+    animation: myAnim 4s ease-in-out 0s infinite normal forwards;
+}
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+@media screen and (max-width: 425px){
+    .wrap, .container{
+        flex-direction: column;
+    }
+    h3{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+}
+@media screen and (max-width: 900px){
+    img{
+        width: 150px;
+    }
+    h3{
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+}
